@@ -1,0 +1,66 @@
+LgEval Evaluation Summary
+Mon Apr 29 21:37:25 2019
+
+Output File Directory:  ../../../../classifier_project/HandWriting_Classifier/predictions_train_greedy/
+Ground Truth Directory: ../../../../classifier_project/HandWriting_Classifier/train_GT/
+
+****  PRIMITIVES   **************************************************************
+
+  Directed   Rate(%)     Total   Correct    Errors    SegErr     ClErr    RelErr
+---------------------------------------------------------------------------------
+     Nodes     67.32     81967     55180     26787
+     Edges     91.45   1602450   1465474    136976     15950     14734    106292
+
+     Total     90.28   1684417   1520654    163763
+
+
+Undirected   Rate(%)     Total   Correct    Errors    SegErr     ClErr    RelErr
+---------------------------------------------------------------------------------
+     Nodes     67.32     81967     55180     26787
+Node Pairs     84.82 801225.00 679591.00    121634      7975      7367    106292
+
+     Total     83.19 883192.00    734771    148421
+
+     SegErr: merge/split   ClErr: valid merge class error   RelErr: relation error
+
+
+****  OBJECTS   **************************************************************************
+
+           Recall(%)   Prec(%) 2RP/(R+P)   Targets   Correct  FalseNeg *Detected *FalsePos
+------------------------------------------------------------------------------------------
+   Objects     92.69     84.86     88.60     57331     53139      4192     62621      9482
+ + Classes     72.04     65.95     68.86     57331     41301     16030     62621     21320
+ Class/Det     77.72                         53139     41301
+
+ Relations      0.00    100.00      0.00     51640         0     51640         0         0
+ + Classes      0.00    100.00      0.00     51640         0     51640         0         0
+ Class/Det   (Empty)                             0         0
+
+     2RP/(R+P): harmonic mean (f-measure) for (R)ecall and (P)recision
+     Class/Det: (correct detection and classification) / correct detection
+
+
+****  FILES  ***************************************
+
+             Rate(%)     Total   Correct    Errors
+---------------------------------------------------
+   Objects     62.09      6185      3840      2345
+ + Classes     50.51      6185      3124      3061
+ Class/Det     81.35      3840      3124          
+
+ Relations      6.35      6185       393      5792
+ + Classes      6.35      6185       393      5792
+ Class/Det    100.00       393       393          
+
+ Structure      6.14      6185       380      5805
+ + Classes      6.14      6185       380      5805    *Final
+ Class/Det    100.00       380       380          
+
+
+****  LABEL ERROR HISTOGRAM (Dir. Edges, D_B)  ****
+
+                   0         1         2         3         4         5        >5
+----------------------------------------------------------------------------------
+Num. Files       380       140       255       206       255       155      4794
+Cum. Files       380       520       775       981      1236      1391      6185
+
